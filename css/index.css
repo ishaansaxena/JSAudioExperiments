@@ -27,3 +27,55 @@ audio {
     height: 75px;
     background: #9C27B0;
 }
+
+.music {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: #ffffff;
+    font-family: "Roboto";
+}
+
+.cover {
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    background: black;
+}
+
+img {
+    width: 100%;
+}
+
+.text {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #eee;
+}
+
+h3 {
+    font-size: 0.5rem;
+    font-weight: 300;
+    color: #666;
+}
+
+h4 {
+    margin-bottom: 5px;
+    font-weight: 100;
+    color: #333;
+}

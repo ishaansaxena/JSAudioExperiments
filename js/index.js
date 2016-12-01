@@ -5,6 +5,7 @@ var factor = 300;
 
 var circle = document.getElementById('circle');
 var ring = document.getElementById('ring');
+var text = document.getElementById('text');
 var size = circle.clientHeight;
 
 var colors = ["#E91E63", "#03A9F4", "#009688", "#f44336", "#3F51B5", "#4CAF50", "#FF5722"];
@@ -18,8 +19,10 @@ function circleChange(x) {
     circle.style.width = newSize + 'px';
     ring.style.height = (newSize/2 + size/2) + 'px';
     ring.style.width = (newSize/2 + size/2) + 'px';
-    if (newSize - oldSize > factor/6)
+    if (newSize - oldSize > factor/6) {
         circle.style.background = colors[(++c) % colors.length];
+        text.style.color = colors[c % colors.length];
+    }
     oldSize = newSize;
 }
 
