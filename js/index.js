@@ -44,3 +44,4 @@ processor.onaudioprocess = function(e) {
     circleChange(rootMeanSquared);
 }
 
+window.onload = audio.load();
