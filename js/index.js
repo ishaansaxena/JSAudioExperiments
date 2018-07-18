@@ -1,4 +1,4 @@
-var context = new webkitAudioContext();
+var context = new AudioContext();
 var audio = document.getElementById('audio');
 var processor = context.createScriptProcessor(2048, 1, 1);
 var factor = 300;
